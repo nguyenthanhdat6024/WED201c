@@ -3,14 +3,14 @@ body {
   font-size: 20px;
 }
 
-header,
-h1 {
+header,h1 {
+    display:inline-block;
   background-color: rgba(174, 225, 129, 0.83);
   color: rgb(42, 73, 188);
   text-align: center;
   font-family: "Courier New", Courier, monospace;
   display: block;
-  width: 120%;
+  width: 100%;
 }
 
 nav {
@@ -46,17 +46,15 @@ p {
 a {
   text-decoration: none;
 }
-img[src$=".jpg"] {
-  width: 10%;
-}
 .style1 {
    display: grid;
     justify-content: start;
+    width: 100%;
     column-gap: 40%;
     grid-auto-flow: row;
     align-content: center;
     justify-items: center;
-    row-gap: auto;
+    row-gap: 5px;
 }
 .style2 {
   display: flex;

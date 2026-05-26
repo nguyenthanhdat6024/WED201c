@@ -49,16 +49,15 @@ a {
 .style1 {
    display: grid;
     justify-content: start;
-    width: 100%;
-    column-gap: 40%;
-    grid-auto-flow: row;
-    align-content: center;
-    justify-items: center;
+    align-items: center;
     row-gap: 5px;
 }
 .style2 {
   display: flex;
    flex-wrap: wrap;
    justify-content: space-around;
+}
+img[src$=".jpg"] {
+    width: 100%;
 }
 

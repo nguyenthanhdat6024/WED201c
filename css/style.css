@@ -85,3 +85,11 @@ main a:hover {
     color: rgb(255, 0, 0);
     text-decoration: none;
 }
+.style1 {
+   display: grid;
+    grid-template-columns: 200px 200px;
+    justify-content: center;
+    align-items: center;
+    column-gap: 25px;
+    row-gap: 10px;
+}

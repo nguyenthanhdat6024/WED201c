@@ -74,6 +74,8 @@ nav .current {
 main div img {
   width: 100%;
   border-radius: 10px;
+  padding: 5px;
+  margin: 10px;
 }
 main div img:hover {
     transform: scale(1.08);
@@ -83,4 +85,3 @@ main a:hover {
     color: rgb(255, 0, 0);
     text-decoration: none;
 }
-

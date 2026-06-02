@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <title>Đặc sản vùng Quảng Nam</title>
+    <script src="js/console.js"></script>
 </head>
-<body> 
+<body onload="checkOnLoad(); document.body.style.backgroundColor='lightyellow'"> 
   <nav><a href="#main-text">skip to main content</a></nav>
   <header>
   <nav>
@@ -33,13 +34,14 @@
     </section>
     <section>
         <h2>Các loại Mỳ Quảng</h2>
+        <div id="image">Di chuột qua một hình ảnh bên dưới để hiển thị ở đây.</div>
         <div class="style1">
-        <img src="./img/myCaLoc.jpg" alt=" Mỳ Quảng cá lóc thơm ngon" width="300">
-        <figure>Mỳ Quảng cá lóc</figure>
-        <img src="./img/myGa.jpg" alt="Mỳ Quảng gà đặc biệt" width="300">
-        <figure>Mỳ Quảng gà</figure>
-        <img src="./img/myTomThit.jpg" alt="Mỳ Quảng tôm thịt siêu hấp dẫn" width="300">
-        <figure>Mỳ Quảng tôm</figure>
+        <img class="preview" src="./img/myCaLoc.jpg" alt=" Mỳ Quảng cá lóc thơm ngon" width="300" onmouseover="upDate(this)" onmouseout="unDo()">
+        <p id="img1">Mỳ Quảng cá lóc</p>
+        <img class="preview" src="./img/myGa.jpg" alt="Mỳ Quảng gà đặc biệt" width="300" id="img2" onmouseover="upDate(this)" onmouseout="unDo()">
+        <p id= "img2">Mỳ Quảng gà</p>
+        <img class="preview" src="./img/myTomThit.jpg" alt="Mỳ Quảng tôm thịt siêu hấp dẫn" width="300" id="img3" onmouseover="upDate(this)" onmouseout="unDo()">
+        <p id= "img3">Mỳ Quảng tôm</p>
         </div>
         </section>
     <section>

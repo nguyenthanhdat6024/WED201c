@@ -7,7 +7,7 @@
     <title>Đặc sản vùng Quảng Nam</title>
     <script src="js/console.js"></script>
 </head>
-<body onload="checkOnLoad(); document.body.style.backgroundColor='lightyellow'"> 
+<body onload="setImages()" onload="pickImages()"> 
   <nav><a href="#main-text">skip to main content</a></nav>
   <header>
   <nav>
@@ -20,28 +20,20 @@
     <h1>Đặc sản vùng Quảng Nam</h1></header>
     <main id="main-text">
     <section>
-    <h2>Giới thiệu về Mỳ Quảng</h2>
-    <p class="current"><a href="https://websitequangnam.com/ditichlichsu/2024/12/10/my-quang/" target="_blank">Mỳ Quảng</a> là một món ăn truyền thống của Việt Nam, đặc biệt phổ biến ở vùng <a href="https://imq.com.vn/tong-quan-ve-tinh-quang-nam/" target="_blank">Quảng Nam</a>.<br> Món ăn này được làm từ bột gạo, nước dùng thơm ngon và thường được ăn kèm với rau sống, đậu phộng rang và thịt heo hoặc tôm.</p>
-   </section>
-   <section> <h2>Nguyên liệu chính</h2>
-    <ul>
-        <li>Bột gạo</li>
-        <li>Nước dùng</li>
-        <li>Rau sống</li>
-        <li>Đậu phộng rang</li>
-        <li>Thịt heo, tôm, thịt gà</li>
-    </ul>
-    </section>
-    <section>
-        <h2>Các loại Mỳ Quảng</h2>
         <div id="image">Di chuột qua một hình ảnh bên dưới để hiển thị ở đây.</div>
-        <div class="style1">
-        <img class="preview" src="./img/myCaLoc.jpg" alt=" Mỳ Quảng cá lóc thơm ngon" width="300" onmouseover="upDate(this)" onmouseout="unDo()">
-        <p id="img1">Mỳ Quảng cá lóc</p>
-        <img class="preview" src="./img/myGa.jpg" alt="Mỳ Quảng gà đặc biệt" width="300" id="img2" onmouseover="upDate(this)" onmouseout="unDo()">
-        <p id= "img2">Mỳ Quảng gà</p>
-        <img class="preview" src="./img/myTomThit.jpg" alt="Mỳ Quảng tôm thịt siêu hấp dẫn" width="300" id="img3" onmouseover="upDate(this)" onmouseout="unDo()">
-        <p id= "img3">Mỳ Quảng tôm</p>
+        <div class="rand">
+        <nav><img class="preview" src="./img/myCaLoc.jpg" alt=" Mỳ Quảng cá lóc thơm ngon" width="300" onmouseover="upDate(this)" onmouseout="unDo()">
+        </nav>
+        <nav><img class="preview" src="./img/myGa.jpg" alt="Mỳ Quảng gà đặc biệt" width="300" id="img2" onmouseover="upDate(this)" onmouseout="unDo()">
+        </nav>
+        <nav><img class="preview" src="./img/myTomThit.jpg" alt="Mỳ Quảng tôm thịt siêu hấp dẫn" width="300" id="img3" onmouseover="upDate(this)" onmouseout="unDo()">
+        </nav>
+        </nav>
+        <nav><img class="preview" src="./img/myTomThit.jpg" alt="Mỳ Quảng tôm thịt siêu hấp dẫn" width="300" id="img3" onmouseover="upDate(this)" onmouseout="unDo()">
+        </nav>
+        </nav>
+        <nav><img class="preview" src="./img/myTomThit.jpg" alt="Mỳ Quảng tôm thịt siêu hấp dẫn" width="300" id="img3" onmouseover="upDate(this)" onmouseout="unDo()">
+        </nav>
         </div>
         </section>
     <section>
@@ -53,5 +45,5 @@
     <p>&copy; 2024 Mỳ Quảng. All rights reserved.</p>
 </footer>
 </body>
-
+<script src="./js/console.js"></script>
 </html>

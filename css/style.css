@@ -77,17 +77,14 @@ main div img {
   padding: 5px;
   margin: 10px;
 }
-main div img:hover {
-    transform: scale(1.08);
-    transition: transform 0.3s ease;
-}
+
 main a:hover {
     color: rgb(255, 0, 0);
     text-decoration: none;
 }
-.style1 {
-   display: grid;
-    grid-template-columns: 200px 200px;
+.rand {
+   display: inline-grid;
+    grid-template-columns: 200px 200px 200px 200px 200px;
     justify-content: center;
     align-items: center;
     column-gap: 25px;
@@ -104,4 +101,10 @@ main a:hover {
     font-size: 18px;
     color: rgb(25, 106, 111);
     
+}
+img:hover, img:focus {
+    transform: scale(1.08);
+    transition: transform 0.3s ease;
+    opacity: 1;
+    border: 5px solid blue;
 }

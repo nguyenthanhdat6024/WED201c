@@ -26,3 +26,27 @@ function unDo() {
     document.getElementById("image").style.color = "black"; // Đặt lại màu văn bản về mặc định
     console.log("đã mouseout!");
 }
+
+function pickImage() {
+    options = ["banhTrangDL1.jpg", "banhTrangDL2.jpg", "caoLau1.jpg", "caoLau2.jpg", "caoLau3.jpg", 
+        "caoLau4.jpg", "caoLau5.jpg","caoLau6.jpg",  "myGa.jpg", "myTomThit.jpg", "myCaloc.jpg"];
+    randomImg = "img/" + options[Math.floor(Math.random() * options.length)];
+    img = document.querySelector("#feature-image");
+    img.src = randomImg;
+    img.alt = "Random image";
+}
+
+function setImages(){
+    options = ["banhTrangDL1.jpg", "banhTrangDL2.jpg", "caoLau1.jpg", "caoLau2.jpg", "caoLau3.jpg", 
+        "caoLau4.jpg", "caoLau5.jpg","caoLau6.jpg",  "myGa.jpg", "myTomThit.jpg", "myCaloc.jpg"];
+
+    currentImages = document.querySelectorAll(".rand img")
+    for (var i = 0; i < currentImages.length; i++) { 
+        console.log("Image " + i); 
+        randomImg = "img/" + options[Math.floor(Math.random() * options.length)];
+        currentImages[i].src = randomImg;
+        currentImages[i].alt = "image " + i;
+        currentImages[i].setAttribute("tabindex", "0");
+           
+    }
+}

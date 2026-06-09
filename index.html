@@ -8,8 +8,8 @@
     <script src="js/console.js"></script>
 </head>
 <body onload="setImages()"> 
-  <nav><a href="#main-text">skip to main content</a></nav>
-  <header>
+  
+  <header id="header-text">
   <nav>
     <ul>
       <li><a href="index.html">home</a></li>
@@ -19,9 +19,13 @@
   </nav>
     <h1>Đặc sản vùng Quảng Nam</h1>
   </header>
-    <main id="main-text">
+    <main>
+      <div> 
+        <p>Giới thiệu về Mỳ Quảng</p>
+        <p>Mỳ Quảng là một món ăn truyền thống nổi tiếng của vùng Quảng Nam, Việt Nam. Món ăn này được làm từ bột gạo, nước dùng thơm ngon và thường được kèm theo các loại thịt như gà, cá lóc, tôm, hoặc thịt heo. Mỳ Quảng có hương vị đặc trưng với sự kết hợp của nước dùng đậm đà, rau sống tươi mát và các loại gia vị như ớt, tỏi, và hành phi.<br> Đây là một món ăn phổ biến không chỉ trong khu vực mà còn thu hút du khách từ khắp nơi đến thưởng thức.</p>
+    </div>
     <section>
-        <h2 id="image">Di chuột qua một hình ảnh bên dưới để hiển thị ở đây.</h2>
+        <h2 id="image">Di chuột qua một hình ảnh<br> bên dưới để hiển thị ở đây.</h2>
         <div class="rand">
         <nav>
           <img class="preview" src="./img/myCaLoc.jpg" alt=" Mỳ Quảng cá lóc thơm ngon" width="300" onmouseover="upDate(this)" onmouseout="unDo()">
@@ -44,6 +48,7 @@
         <h2>Tìm hiểu thêm về Mỳ Quảng: </h2>
         <a href="https://websitequangnam.com/ditichlichsu/2024/12/10/my-quang/" target="_blank">tại đây</a>
     </section>
+      <nav><a href="#header-text">back to top</a></nav>
     </main>
     <footer>
     <p>&copy; 2024 Mỳ Quảng. All rights reserved.</p>

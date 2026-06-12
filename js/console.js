@@ -29,7 +29,7 @@ function unDo() {
 
 function pickImage() {
     options = ["banhTrangDL1.jpg", "banhTrangDL2.jpg", "caoLau1.jpg", "caoLau2.jpg", "caoLau3.jpg", 
-        "caoLau4.jpg", "caoLau5.jpg","caoLau6.jpg",  "myGa.jpg", "myTomThit.jpg", "myCaloc.jpg"];
+        "caoLau4.jpg", "caoLau5.jpg","caoLau6.jpg",  "myGa.jpg", "myTomThit.jpg"];
     randomImg = "img/" + options[Math.floor(Math.random() * options.length)];
     img = document.querySelector("#feature-image");
     img.src = randomImg;
@@ -38,7 +38,7 @@ function pickImage() {
 
 function setImages(){
     options = ["banhTrangDL1.jpg", "banhTrangDL2.jpg", "caoLau1.jpg", "caoLau2.jpg", "caoLau3.jpg", 
-        "caoLau4.jpg", "caoLau5.jpg","caoLau6.jpg",  "myGa.jpg", "myTomThit.jpg", "myCaloc.jpg"];
+        "caoLau4.jpg", "caoLau5.jpg","caoLau6.jpg",  "myGa.jpg", "myTomThit.jpg"];
 
     currentImages = document.querySelectorAll(".rand img")
     for (var i = 0; i < currentImages.length; i++) { 

@@ -73,7 +73,7 @@ nav .current {
 }
 main div img {
   width: 100%;
-  border-radius: 15px;
+  height: 80%;
 }
 
 main a:hover {
@@ -83,9 +83,10 @@ main a:hover {
 .rand {
    display: grid;
     grid-template-columns: 100%;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    column-gap: 25px;
+    column-gap: 10px;
+    row-gap: 10px;
     
 }
 #image {
@@ -117,10 +118,15 @@ img:hover, img:focus {
   div {
     width: 40%;
   }
+  img {
+    border: 3px solid black;
+    border-radius: 20px;
+  }
   .rand {
-    width: 100%;
-    grid-template-columns: 30% 30%;
-    height: 30%;
+    grid-template-columns: 45% 45%;
+  }
+  .rand img:nth-child(5n) {
+    grid-column:1 / span 2;
   }
   #image {
     width: 45%;
@@ -129,9 +135,7 @@ img:hover, img:focus {
 }
 
 @media screen and (min-width: 998px) {
- h1 {
-    width: 100%;
-  }
+
   h2{
     width: 30%;
   }
@@ -139,9 +143,17 @@ img:hover, img:focus {
     width: 30%;
   }
   .rand {
-    width: 100%;
-    grid-template-columns: 30% 30%;
-    height: 30%;
+    width: 80%;
+    grid-template-columns: 40% 40%;
+  }
+  img{
+    border-radius: 0px;
+  }
+  .rand img:nth-child(5n) {
+    grid-column: 2;
+  }
+  .rand img:nth-child(3n) {
+    grid-column:1 / span 2;
   }
   #image {
     width: 30%;
